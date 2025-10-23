@@ -1,0 +1,16 @@
+h1{
+    font-size: 40px; /* tamanho da letra */
+    color: white;/* cor branca */
+    background-color: darkred; /* fundo vermelho escuro */
+    border-style: solid;/* borda sólida, preta linha normal */
+    border-width: 5px;/* largura da borda */
+    border-color: red; /* cor da borda */
+    font-family: sans-serif; /* fonte */
+    text-align: center;/* texto no centro da tela */
+    border-radius: 10px;/* arredonda a borda */
+    padding: 10px; /* é a margem de dentro, vamos dizer q é o tamanho da lousa */
+}
+
+h4{
+    
+}
