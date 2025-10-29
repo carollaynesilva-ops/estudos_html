@@ -39,6 +39,20 @@ h4{
     display: inline; /* é oq tem na tela, fica na mesma linha as palavras, nesse caso */
 }
 #menu ul li a {
-    padding: 10px 30px;
+    padding: 10px 30px; /* padding é o fundo da lousa */
     text-decoration: none;
+    background-color: #ededed;
+    display: inline-block;
+    border-bottom: 3px solid #ededed;/* borda debaixo */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 0 50px;/* não vai ter margem encima e embaixo, só dos lados */
+}
+
+#menu ul li a:hover{
+    /* quando passar o mouse encima vai mudar: */
+    background-color: #b5d45d;
+    color: #2d19e2;
+    border-bottom: 3px solid #ea0000;
 }
