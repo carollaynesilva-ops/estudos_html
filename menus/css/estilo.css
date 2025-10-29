@@ -56,3 +56,37 @@ h4{
     color: #2d19e2;
     border-bottom: 3px solid #ea0000;
 }
+
+/* TUDO ISSO ATÉ AGR FOI O MENU HORIZONTAL */
+
+/* APARTIR DE AGORA É O VERTICAL */
+
+/* seleciona o ul que estiver dentro do elemento id menuv */
+#menuv ul{
+    list-style-type: none;/* tira a bolinha/ marcador  */
+    margin-left: 0; /*zera a margem esquerda */
+    padding: 20px 50px; /* fundo do menu */
+    width: 150px;/* tamanho da largura */
+    background-color: #2b1010;
+}
+
+/* seleciona os links <a> dentro de cada <li> nos <ul> que está no menuv */
+#menuv ul li a{
+display: block;/* faz um link virar um bloco */
+padding: 10px 40px;
+background-color: #ededed;
+color: #333;
+text-decoration: none;
+text-align: center;
+border-bottom: 3px solid #ededed;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+border-radius: 5px;
+margin: 2px 0px ;
+}
+
+#menuv ul li a:hover{
+    background-color:#b5d45d;
+    color: #2d19e2;
+    border-bottom: 3px solid #ea0000;
+}
