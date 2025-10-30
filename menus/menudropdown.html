@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Drop Down</title>
     <style>
+        
         .dropbtn{
             background-color: #4caf50;
             color: white;
@@ -14,26 +15,49 @@
             border: none;
             cursor: pointer;/* pro trequinho do mouse virar uma mãozinha para clicar */
         }
+
         .dropdown{
             position: relative;
             /* relative: o elemento continua ocupando o mesmo espaço, 
             mas pode ser movido com top, letf, right, bottom */
             display: inline-block;
         }
+
         .dropdown-conteudo{
             display: none;
             position: absolute;
             background-color: #f9f9f9;
             min-width: 160px; /* minimo de largura, o tamanho minimo é esse para os textos que ficarão */
-            box-shadow: 0 8px 16px 0 rgb(from 0,0,0,0.2); 
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
             z-index: 1;
+        }
+
+        .dropdown-conteudo a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;/* faz o link ocupar toda a largura(linha) disponivel e não somente no texto(é clicavel toda a linha) */
+        }
+
+        .dropdown-conteudo a:hover{
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-conteudo{
+            /* quando o usuário passar o mouse sobre o elemento classe .dropdown o conteúdo oculto vai ser exibido */
+            display: block; /* faz o link ocupar toda a largura(linha) disponivel e não somente no texto(é clicavel toda a linha) */
+        }
+
+        .dropdown:hover .dropbtn{
+            /* vai mudar a cor do botão principal quando o menu está sendo exibido */
+            background-color: #3e8e41;
         }
     </style>
  </head>
  <body>
     <h2>Menu Drop Down SESI</h2>
     <p>mova o mouse até o botão para abrir o menu DropDown</p>
-    <div class="DropDown">
+    <div class="dropdown">
         <button class="dropbtn">DropDown</button>
         <div class="dropdown-conteudo">
             <a href="#">Link 1</a>
